@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>
+            landing page
+        </title>
+        <style type="text/css">
+            *{padding:0;margin:0;box-sizing: border-box;}
+            header{
+                width: 100%;
+                height:100vh;
+                background: linear-gradient(rgba(0, 0, 0, 0.11),rgba(0,0,0,0.9)),url("download.png");
+                background-size: cover;
+                font-family: sans-serif;
+            }
+            nav{
+                width: 100%;
+                height: 100px;
+                color:black;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .logo{
+                color:black;
+                font-size: 2em;
+                letter-spacing: 1px;
+            } 
+            .menu a{
+                text-decoration:none;
+                color:black;
+                
+                padding: 20px 30px;
+                font-size: 20px;
+                position: relative;
+            }
+            .menu a:before{
+                content: "";
+                position: absolute;
+                left:0;
+                bottom :0%;
+                width: 0%;
+                height: 100%;
+               
+                border-bottom: 3px solid  black;
+                transition:0.3s linear ;
+
+            }
+            .menu a:hover:before{
+                width: 100%;
+
+            }
+            .login a {
+                text-decoration: none;
+                color:white;
+                padding: 10px 20px;
+                font-size: 20px;
+                background: brown;
+                border-radius: 8px;
+                width:100px;
+            }
+            .login a:hover{
+               width:300px;
+
+            }
+           
+            .h-txt{
+                color:black;
+                max-width: 750px;
+                position: absolute;
+                top: 50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                text-align: center;
+            }
+            .h-txt span{
+                letter-spacing: 10px;
+            }
+            .h-txt h1{
+                font-size: 3.8em;
+            }
+            .h-txt a{
+                text-decoration: none;
+                color:BLACK;
+                padding: 10px 20px;
+                font-size: 20px;
+                background: indianred;
+                border-radius: 8px;
+            }
+                
+            
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">ROYAL ENFIELD<b></b></div><br>
+                <div class="menu">
+                    <a href="#">BIKES</a>
+                    <a href="#">REGISTRATIONS</a>
+                    <a href="#">ACCESSORIES</a>
+                </div>
+                <div class="login">
+                    <a href="#">Login</a>
+                </div>
+            </nav>
+            <section class="h-txt">
+                <span>
+                    <H2>
+                        ENJOY
+                    </H2>
+                    <h1 title="best bikes">
+                        ROYAL ENFIELD 
+                    </h1><br>
+                    <H2>
+                    
+                        ride for life 
+                    </H2>
+                    <br>
+                    <a href="#">TAKE A LOOK</a>
+
+                </span>
+            </section>
+
+        </header>
+    </body>
+</html>
